@@ -6,9 +6,9 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
-\bibitem[{Author(2005)}]{exampleCitation}
-Author, R. (2005).
-\newblock \emph{UA Thesis Example}.
-\newblock University of ABC.
+\bibitem[{Want(2011)}]{want2011near}
+Want, R. (2011).
+\newblock Near field communication.
+\newblock \emph{IEEE Pervasive Computing}, \textbf{10}(3), pp. 4--7.
 
 \end{thebibliography}

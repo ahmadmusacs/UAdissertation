@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{20}
 \addcontentsline{toc}{chapter}{\bibname}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,6 +12,13 @@ Aarts, F., J.~Ruiter, and E.~Poll (2013).
 \newblock pp. 461--468.
 \newblock ISBN 978-1-4799-1324-4.
 \newblock \doi{10.1109/ICSTW.2013.60}.
+
+\bibitem[{Angluin(1987)}]{ANGLUIN198787}
+Angluin, D. (1987).
+\newblock Learning regular sets from queries and counterexamples.
+\newblock \emph{Information and Computation}, \textbf{75}(2), pp. 87--106.
+\newblock ISSN 0890-5401.
+\newblock \doi{https://doi.org/10.1016/0890-5401(87)90052-6}.
 
 \bibitem[{Dolev and Yao(1983)}]{securityofpublickey}
 Dolev, D. and A.~Yao (1983).
@@ -97,6 +104,10 @@ Meier, S., B.~Schmidt, C.~Cremers, and D.~Basin (2013).
 \newblock In Sharygina, N. and H.~Veith (eds.) \emph{Computer Aided
   Verification}, pp. 696--701. Springer Berlin Heidelberg, Berlin, Heidelberg.
 \newblock ISBN 978-3-642-39799-8.
+
+\bibitem[{Niese(2003)}]{Niese2003AnIA}
+Niese, O. (2003).
+\newblock An integrated approach to testing complex systems.
 
 \bibitem[{Research(2021)}]{nfcmarket}
 Research, A.~M. (2021).

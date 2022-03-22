@@ -26,9 +26,9 @@ types of security attacks. However, the focus of previous research work in this 
 rather than the implementation of the protocol. We are interested in verifying the protocol implementation to 
 ensure that the EMV specifications are properly followed by NFC-wallet applications' developers.
 
-\textbf{Goal: }PayFuzz aims to find the gap between the EMV protocol specification and it's implementation on real-life wallet 
-applications. We feed the wallet payment interface with our constructed commands and record the response to 
-create a finite state machine(FSM) using LearnLib similar to \cite{formalmodels}. The FSMs are then checked for EMV specification 
+\textbf{Goal: }We aim to find the gap between the EMV protocol specification and it's implementation on real-life wallet 
+applications. We feed the wallet payment interface with our constructed input messages and record the responses to 
+create a finite state machine(FSM) following a regular inference approach similar to \cite{formalmodels}. The FSMs are then checked for EMV specification 
 compliance. We plan to perform i) differential analysis of multiple implementations through equivalence 
 checks \cite{7491755}, ii) state machine verification of security properties \cite{Hussain2018LTEInspectorAS}, 
 and iii) protocol verification under Dolev-Yao adversary \cite{securityofpublickey} 
@@ -51,4 +51,14 @@ aim to create formal specifications and enable secure code generation for critic
 
 \end{itemize}
 
-\textbf{Our Approach: }
+\textbf{Our Approach: } We use regular inference, also known as automata learning \cite{ANGLUIN198787}, to extract a behavioral 
+abstraction of the NFC wallet application. The wallet being tested is called System Under Test (SUT). It takes sequence of 
+input messages and responds accordingly by running the payment service. The inference algorithms \cite{Niese2003AnIA} are responsible 
+to feed sequence of inputs to SUT and observe the outputs to infer a Mealy machine which is a special form of FSM. We also patch the original 
+apk (Android Package) to bypass NFC interface which is an obstacle towards building automated black box analysis 
+framework. To learn FSMs from the SUT, we use active FSM learning approach \cite{dikeue} \cite{dynamictesting}. 
+Using this approach on contactless android wallets has several protocol-specific challenges. First, an application crash 
+may force the output of our queries to be non-deterministic which is a violation of a pre-requirement of applying active automata learning. 
+Second, a reset has to be implemented in the wallet so that after each sequence of messages the wallet deletes all 
+internal states. We choose a software based reset approach for implementing that. Third, we have to convert the 
+abstract symbols into corresponding apdu messages. 

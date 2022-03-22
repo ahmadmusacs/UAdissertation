@@ -352,6 +352,63 @@ isbn="978-3-662-47854-7"
   organization={IEEE}
 }
 
+@InProceedings{10.1007/978-3-642-39799-8_48,
+author="Meier, Simon
+and Schmidt, Benedikt
+and Cremers, Cas
+and Basin, David",
+editor="Sharygina, Natasha
+and Veith, Helmut",
+title="The TAMARIN Prover for the Symbolic Analysis of Security Protocols",
+booktitle="Computer Aided Verification",
+year="2013",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="696--701",
+abstract="The Tamarin prover supports the automated, unbounded, symbolic analysis of security protocols. It features expressive languages for specifying protocols, adversary models, and properties, and support for efficient deduction and equational reasoning. We provide an overview of the tool and its applications.",
+isbn="978-3-642-39799-8"
+}
+
+
+@inproceedings{Hussain2018LTEInspectorAS,
+  title={LTEInspector: A Systematic Approach for Adversarial Testing of 4G LTE},
+  author={Syed Rafiul Hussain and Omar Chowdhury and Shagufta Mehnaz and Elisa Bertino},
+  booktitle={NDSS},
+  year={2018}
+}
+@INPROCEEDINGS{7491755,  author={Drozdov, Dmitrii and Dubinin, Victor and Kulagin, Vladimir},  booktitle={2016 International Siberian Conference on Control and Communications (SIBCON)},   title={Petri nets behavioral equivalence checking in SMV},   year={2016},  volume={},  number={},  pages={1-4},  doi={10.1109/SIBCON.2016.7491755}}
+@ARTICLE{securityofpublickey,  author={Dolev, D. and Yao, A.},  journal={IEEE Transactions on Information Theory},   title={On the security of public key protocols},   year={1983},  volume={29},  number={2},  pages={198-208},  doi={10.1109/TIT.1983.1056650}}
+
+@inproceedings{vmhunt,
+author = {Xu, Dongpeng and Ming, Jiang and Fu, Yu and Wu, Dinghao},
+title = {VMHunt: A Verifiable Approach to Partially-Virtualized Binary Code Simplification},
+year = {2018},
+isbn = {9781450356930},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3243734.3243827},
+doi = {10.1145/3243734.3243827},
+abstract = {Code virtualization is a highly sophisticated obfuscation technique adopted by malware authors to stay under the radar. However, the increasing complexity of code virtualization also becomes a "double-edged sword" for practical application. Due to its performance limitations and compatibility problems, code virtualization is seldom used on an entire program. Rather, it is mainly used only to safeguard the key parts of code such as security checks and encryption keys. Many techniques have been proposed to reverse engineer the virtualized code, but they share some common limitations. They assume the scope of virtualized code is known in advance and mainly focus on the classic structure of code emulator. Also, few work verifies the correctness of their deobfuscation results. In this paper, with fewer assumptions on the type and scope of code virtualization, we present a verifiable method to address the challenge of partially-virtualized binary code simplification. Our key insight is that code virtualization is a kind of process-level virtual machine (VM), and the context switch patterns when entering and exiting the VM can be used to detect the VM boundaries. Based on the scope of VM boundary, we simplify the virtualized code. We first ignore all the instructions in a given virtualized snippet that do not affect the final result of that snippet. To better revert the data obfuscation effect that encodes a variable through bitwise operations, we then run a new symbolic execution called multiple granularity symbolic execution to further simplify the trace snippet. The generated concise symbolic formulas facilitate the correctness testing of our simplification results. We have implemented our idea as an open source tool, VMHunt, and evaluated it with real-world applications and malware. The encouraging experimental results demonstrate that VMHunt is a significant improvement over the state of the art.},
+booktitle = {Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {442–458},
+numpages = {17},
+keywords = {de-obfuscation, code virtualization, binary analysis, multiple granularity symbolic execution},
+location = {Toronto, Canada},
+series = {CCS '18}
+}
+
+
+@inproceedings {dtlsimplement,
+author = {Paul Fiterau-Brostean and Bengt Jonsson and Robert Merget and Joeri de Ruiter and Konstantinos Sagonas and Juraj Somorovsky},
+title = {Analysis of {DTLS} Implementations Using Protocol State Fuzzing},
+booktitle = {29th USENIX Security Symposium (USENIX Security 20)},
+year = {2020},
+isbn = {978-1-939133-17-5},
+pages = {2523--2540},
+url = {https://www.usenix.org/conference/usenixsecurity20/presentation/fiterau-brostean},
+publisher = {USENIX Association},
+month = aug,
+}
 
 
 @phdthesis{emms2016contactless,

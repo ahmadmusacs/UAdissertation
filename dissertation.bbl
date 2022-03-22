@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{18}
 \addcontentsline{toc}{chapter}{\bibname}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -6,9 +6,130 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
-\bibitem[{Author(2005)}]{exampleCitation}
-Author, R. (2005).
-\newblock \emph{UA Thesis Example}.
-\newblock University of ABC.
+\bibitem[{Aarts et~al.(2013)Aarts, Ruiter, and Poll}]{formalmodels}
+Aarts, F., J.~Ruiter, and E.~Poll (2013).
+\newblock Formal Models of Bank Cards for Free.
+\newblock pp. 461--468.
+\newblock ISBN 978-1-4799-1324-4.
+\newblock \doi{10.1109/ICSTW.2013.60}.
+
+\bibitem[{Dolev and Yao(1983)}]{securityofpublickey}
+Dolev, D. and A.~Yao (1983).
+\newblock On the security of public key protocols.
+\newblock \emph{IEEE Transactions on Information Theory}, \textbf{29}(2), pp.
+  198--208.
+\newblock \doi{10.1109/TIT.1983.1056650}.
+
+\bibitem[{Drozdov et~al.(2016)Drozdov, Dubinin, and Kulagin}]{7491755}
+Drozdov, D., V.~Dubinin, and V.~Kulagin (2016).
+\newblock Petri nets behavioral equivalence checking in SMV.
+\newblock In \emph{2016 International Siberian Conference on Control and
+  Communications (SIBCON)}, pp. 1--4.
+\newblock \doi{10.1109/SIBCON.2016.7491755}.
+
+\bibitem[{Emms(2016)}]{emms2016contactless}
+Emms, M.~J. (2016).
+\newblock \emph{Contactless payments: usability at the cost of security?}
+\newblock Ph.D. thesis, Newcastle University.
+
+\bibitem[{Fiterau-Brostean et~al.(2020)Fiterau-Brostean, Jonsson, Merget,
+  de~Ruiter, Sagonas, and Somorovsky}]{dtlsimplement}
+Fiterau-Brostean, P., B.~Jonsson, R.~Merget, J.~de~Ruiter, K.~Sagonas, and
+  J.~Somorovsky (2020).
+\newblock Analysis of {DTLS} Implementations Using Protocol State Fuzzing.
+\newblock In \emph{29th USENIX Security Symposium (USENIX Security 20)}, pp.
+  2523--2540. USENIX Association.
+\newblock ISBN 978-1-939133-17-5.
+
+\bibitem[{Francis et~al.(2009)Francis, Hancke, Mayes, and
+  Markantonakis}]{francis2009potential}
+Francis, L., G.~Hancke, K.~Mayes, and K.~Markantonakis (2009).
+\newblock Potential misuse of NFC enabled mobile phones with embedded security
+  elements as contactless attack platforms.
+\newblock In \emph{2009 International Conference for Internet Technology and
+  Secured Transactions,(ICITST)}, pp. 1--8. IEEE.
+
+\bibitem[{Google(2020)}]{hostbased}
+Google (2020).
+\newblock {Host-based card emulation overview}.
+\newblock
+  \url{https://developer.android.com/guide/topics/connectivity/nfc/hce}.
+\newblock [Online; accessed 10-May-2021].
+
+\bibitem[{Google(2021{\natexlab{a}})}]{gpay}
+Google (2021{\natexlab{a}}).
+\newblock {Google Pay}.
+\newblock \url{https://pay.google.com}.
+\newblock [Online; accessed 10-May-2021].
+
+\bibitem[{Google(2021{\natexlab{b}})}]{hostapdu}
+Google (2021{\natexlab{b}}).
+\newblock {HostApduService}.
+\newblock
+  \url{https://developer.android.com/reference/android/nfc/cardemulation/HostApduService}.
+\newblock [Online; accessed 10-May-2021].
+
+\bibitem[{Hussain et~al.(2018)Hussain, Chowdhury, Mehnaz, and
+  Bertino}]{Hussain2018LTEInspectorAS}
+Hussain, S.~R., O.~Chowdhury, S.~Mehnaz, and E.~Bertino (2018).
+\newblock LTEInspector: A Systematic Approach for Adversarial Testing of 4G
+  LTE.
+\newblock In \emph{NDSS}.
+
+\bibitem[{LLC(2021)}]{emvco}
+LLC, E. (2021).
+\newblock {EMVCo Contactless Specifications}.
+\newblock \url{https://www.emvco.com/emv-technologies/contactless/}.
+\newblock [Online; accessed 10-May-2021].
+
+\bibitem[{Madhoun et~al.(2018)Madhoun, Bertin, and
+  Pujolle}]{emvandvulnerabilities}
+Madhoun, N.~E., E.~Bertin, and G.~Pujolle (2018).
+\newblock An Overview of the EMV Protocol and Its Security Vulnerabilities.
+\newblock In \emph{2018 Fourth International Conference on Mobile and Secure
+  Services (MobiSecServ)}, pp. 1--5.
+\newblock \doi{10.1109/MOBISECSERV.2018.8311444}.
+
+\bibitem[{Meier et~al.(2013)Meier, Schmidt, Cremers, and
+  Basin}]{10.1007/978-3-642-39799-8_48}
+Meier, S., B.~Schmidt, C.~Cremers, and D.~Basin (2013).
+\newblock The TAMARIN Prover for the Symbolic Analysis of Security Protocols.
+\newblock In Sharygina, N. and H.~Veith (eds.) \emph{Computer Aided
+  Verification}, pp. 696--701. Springer Berlin Heidelberg, Berlin, Heidelberg.
+\newblock ISBN 978-3-642-39799-8.
+
+\bibitem[{Research(2021)}]{nfcmarket}
+Research, A.~M. (2021).
+\newblock {Near Field Communication Market Statistics: 2028}.
+\newblock
+  \url{https://www.alliedmarketresearch.com/near-field-communication-market}.
+\newblock [Online; accessed 10-May-2021].
+
+\bibitem[{Reville(2020)}]{contactlesscovid}
+Reville, P. (2020).
+\newblock {Contactless and COVID-19}.
+\newblock \url{https://www.paymentsjournal.com/contactless-and-covid-19/}.
+\newblock [Online; accessed 10-May-2021].
+
+\bibitem[{van~den Breekel et~al.(2016)van~den Breekel, Ortiz-Yepes, Poll, and
+  de~Ruiter}]{van2016emv}
+van~den Breekel, J., D.~A. Ortiz-Yepes, E.~Poll, and J.~de~Ruiter (2016).
+\newblock EMV in a nutshell.
+\newblock In \emph{Technical Report}, pp. 1--37.
+
+\bibitem[{Want(2011)}]{want2011near}
+Want, R. (2011).
+\newblock Near field communication.
+\newblock \emph{IEEE Pervasive Computing}, \textbf{10}(3), pp. 4--7.
+
+\bibitem[{Xu et~al.(2018)Xu, Ming, Fu, and Wu}]{vmhunt}
+Xu, D., J.~Ming, Y.~Fu, and D.~Wu (2018).
+\newblock VMHunt: A Verifiable Approach to Partially-Virtualized Binary Code
+  Simplification.
+\newblock In \emph{Proceedings of the 2018 ACM SIGSAC Conference on Computer
+  and Communications Security}, CCS '18, p. 442–458. Association for
+  Computing Machinery, New York, NY, USA.
+\newblock ISBN 9781450356930.
+\newblock \doi{10.1145/3243734.3243827}.
 
 \end{thebibliography}

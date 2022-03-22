@@ -26,16 +26,29 @@ types of security attacks. However, the focus of previous research work in this 
 rather than the implementation of the protocol. We are interested in verifying the protocol implementation to 
 ensure that the EMV specifications are properly followed by NFC-wallet applications' developers.
 
-PayFuzz aims to find the gap between the EMV protocol specification and it's implementation on real-life wallet 
+\textbf{Goal: }PayFuzz aims to find the gap between the EMV protocol specification and it's implementation on real-life wallet 
 applications. We feed the wallet payment interface with our constructed commands and record the response to 
-create a finite state machine(FSM) using LearnLib similar to \cite{formalmodels}. Discrepancies between state 
-machines from different wallet applications move us to the evaluation stage where we find vulnerabilities in 
-the implementation which can be leveraged to launch an attack on the wallet application. Specifically, the goal is to 
-develop rigorous techniques for formally studying the security and compliance issues of payment applications 
-(wallets and POS) with automated reasoning (i.e., formal methods and program analysis) and build defenses. We also 
+create a finite state machine(FSM) using LearnLib similar to \cite{formalmodels}. The FSMs are then checked for EMV specification 
+compliance. We plan to perform i) differential analysis of multiple implementations through equivalence 
+checks \cite{7491755}, ii) state machine verification of security properties \cite{Hussain2018LTEInspectorAS}, 
+and iii) protocol verification under Dolev-Yao adversary \cite{securityofpublickey} 
+between wallet and POS \cite{10.1007/978-3-642-39799-8_48}. Futhermore, we plan to extend our analysis to Point of 
+Sale (POS) machines. The final analysis involves both wallet and POS acting in a two party system. 
+Specifically, the goal is to develop rigorous techniques for formally studying the security and 
+compliance issues of payment applications (wallets and POS) with automated reasoning (i.e., formal methods and program analysis) and build defenses. We also 
 aim to create formal specifications and enable secure code generation for critical components as a long-term goal.
 
+\textbf{Challenges: }There are several challenges to enable automated reasoning and physical layer defense.
+\begin{itemize}
+    \item Dynamic analysis: First, dynamic analysis requires to run the application under test. Due
+    to ethical reasons, this needs to be done in an isolated environment. Isolating the execution of applications
+    by mocking all server communications is a hard problem, especially if the messages are not standardized.
+    Second, dynamic analyses require unbounded message probing to produce meaningful results \cite{dtlsimplement}. Sending
+    unbounded messages to analyze the payment protocol over NFC interface is infeasible.
+    \item Static analysis: To make reverse engineering hard and static analysis infeasible, payment
+    application developers use advanced obfuscation techniques. During our initial investigation, we found that
+    some of the applications uses code virtualization, which is hard to circumvent \cite{vmhunt}.
 
+\end{itemize}
 
-In this work, to extract a behavioral abstraction from NFC wallets, we use an active automata learning approach \cite{dikeue} 
-\cite{dynamictesting}. 
+\textbf{Our Approach: }

@@ -1,6 +1,41 @@
 \chapter{INTRODUCTION}
 \label{chapter:introduction}
 
-Contactless payments also known as Near Field Communication \cite{want2011near}
-(NFC) payments is getting more and more popular throughout the
-world. 
+Contactless payments also known as Near Field Communication \cite{want2011near} (NFC) payments is getting more 
+and more popular throughout the world. In 2019, the global NFC market size was valued at \$15 million and the 
+projection shows that by 2028 it will reach \$54 million \cite{nfcmarket}. Moreover, the COVID-19 pandemic has 
+significantly increased the use of contactless payments \cite{contactlesscovid}. 
+To make a contactless payment, one needs to own a contactless-enabled card which can be used near a NFC Point of 
+Sale (POS). Also, major phone vendors like Google, Samsung, Apple has started manufacturing NFC-enabled smart 
+devices which can be used to make a contactless payment. Digital NFC-wallet applications can be installed and 
+activated with a contactless credit/debit card and then used to make a transaction near a contactless-supported 
+terminal.  
+
+Since Android 4.4 introduced Host based card emulation \cite{hostbased} which allows an Android application to 
+emulate a card and communicate directly with an NFC reader, bypassing the necessity of a Secure Element (SE), 
+developers can now build digital NFC-wallet extending Android's Host Apdu Service class\cite{hostapdu}. Among the 
+available NFC-wallets, Google Pay\cite{gpay} and Apple Pay are the most prominent wallet applications being used 
+widely. In addition to these third party applications, many banks develop their own digital wallet application for 
+their customers. To build such an application, the developers follow the standard protocol described by 
+EMV (Europay Mastercard Visa)\cite{van2016emv}. 
+
+Recent works have shown that EMV contactless payment protocol \cite{emvco} has vulnerabilities that can be 
+exploited to make an unauthorized purchase \cite{emms2016contactless}\cite{francis2009potential}. 
+\citet{emvandvulnerabilities} presented an overview of the EMV protocol and how it's vulnerable to different 
+types of security attacks. However, the focus of previous research work in this field is on the protocol itself, 
+rather than the implementation of the protocol. We are interested in verifying the protocol implementation to 
+ensure that the EMV specifications are properly followed by NFC-wallet applications' developers.
+
+PayFuzz aims to find the gap between the EMV protocol specification and it's implementation on real-life wallet 
+applications. We feed the wallet payment interface with our constructed commands and record the response to 
+create a finite state machine(FSM) using LearnLib similar to \cite{formalmodels}. Discrepancies between state 
+machines from different wallet applications move us to the evaluation stage where we find vulnerabilities in 
+the implementation which can be leveraged to launch an attack on the wallet application. Specifically, the goal is to 
+develop rigorous techniques for formally studying the security and compliance issues of payment applications 
+(wallets and POS) with automated reasoning (i.e., formal methods and program analysis) and build defenses. We also 
+aim to create formal specifications and enable secure code generation for critical components as a long-term goal.
+
+
+
+In this work, to extract a behavioral abstraction from NFC wallets, we use an active automata learning approach \cite{dikeue} 
+\cite{dynamictesting}. 

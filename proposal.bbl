@@ -1,14 +1,197 @@
-\begin{thebibliography}{1}
-\addcontentsline{toc}{chapter}{\bibname}
-\providecommand{\natexlab}[1]{#1}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
-  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
-  \urlstyle{rm}\Url}\fi
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\bibitem[{Want(2011)}]{want2011near}
-Want, R. (2011).
-\newblock Near field communication.
-\newblock \emph{IEEE Pervasive Computing}, \textbf{10}(3), pp. 4--7.
+\begin{thebibliography}{13}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Aarts, Ruiter, and Poll}{Aarts
+  et~al\mbox{.}}{2013}]%
+        {formalmodels}
+\bibfield{author}{\bibinfo{person}{Fides Aarts}, \bibinfo{person}{Joeri
+  Ruiter}, {and} \bibinfo{person}{Erik Poll}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Formal Models of Bank Cards for Free}.
+\newblock \bibinfo{journal}{\emph{Proceedings - IEEE 6th International
+  Conference on Software Testing, Verification and Validation Workshops, ICSTW
+  2013}}, \bibinfo{pages}{461--468}.
+\newblock
+\showISBNx{978-1-4799-1324-4}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICSTW.2013.60}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Emms}{Emms}{2016}]%
+        {emms2016contactless}
+\bibfield{author}{\bibinfo{person}{Martin~J Emms}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \emph{\bibinfo{title}{Contactless payments: usability at the cost of
+  security?}}
+\newblock \bibinfo{thesistype}{Ph.D. Dissertation}. \bibinfo{school}{Newcastle
+  University}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Francis, Hancke, Mayes, and
+  Markantonakis}{Francis et~al\mbox{.}}{2009}]%
+        {francis2009potential}
+\bibfield{author}{\bibinfo{person}{Lishoy Francis}, \bibinfo{person}{Gerhard
+  Hancke}, \bibinfo{person}{Keith Mayes}, {and} \bibinfo{person}{Konstantinos
+  Markantonakis}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Potential misuse of NFC enabled mobile phones with
+  embedded security elements as contactless attack platforms}. In
+  \bibinfo{booktitle}{\emph{2009 International Conference for Internet
+  Technology and Secured Transactions,(ICITST)}}. IEEE, \bibinfo{pages}{1--8}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Google}{Google}{2020}]%
+        {hostbased}
+\bibfield{author}{\bibinfo{person}{Google}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{Host-based card emulation overview}}}.
+\newblock
+\newblock
+\shownote{[Online; accessed 10-May-2021].}
+
+
+\bibitem[\protect\citeauthoryear{Google}{Google}{2021a}]%
+        {gpay}
+\bibfield{author}{\bibinfo{person}{Google}.} \bibinfo{year}{2021}\natexlab{a}.
+\newblock \bibinfo{booktitle}{\emph{{Google Pay}}}.
+\newblock
+\newblock
+\shownote{[Online; accessed 10-May-2021].}
+
+
+\bibitem[\protect\citeauthoryear{Google}{Google}{2021b}]%
+        {hostapdu}
+\bibfield{author}{\bibinfo{person}{Google}.} \bibinfo{year}{2021}\natexlab{b}.
+\newblock \bibinfo{booktitle}{\emph{{HostApduService}}}.
+\newblock
+\newblock
+\shownote{[Online; accessed 10-May-2021].}
+
+
+\bibitem[\protect\citeauthoryear{Hussain, Karim, Ishtiaq, Chowdhury, and
+  Bertino}{Hussain et~al\mbox{.}}{2021}]%
+        {dikeue}
+\bibfield{author}{\bibinfo{person}{Syed~Rafiul Hussain},
+  \bibinfo{person}{Imtiaz Karim}, \bibinfo{person}{Abdullah~Al Ishtiaq},
+  \bibinfo{person}{Omar Chowdhury}, {and} \bibinfo{person}{Elisa Bertino}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Noncompliance as Deviant Behavior: An Automated
+  Black-Box Noncompliance Checker for 4G LTE Cellular Devices}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2021 ACM SIGSAC Conference on
+  Computer and Communications Security}} (Virtual Event, Republic of Korea)
+  \emph{(\bibinfo{series}{CCS '21})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{1082–1099}.
+\newblock
+\showISBNx{9781450384544}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3460120.3485388}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{LLC}{LLC}{2021}]%
+        {emvco}
+\bibfield{author}{\bibinfo{person}{EMVCo LLC}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{EMVCo Contactless Specifications}}}.
+\newblock
+\newblock
+\shownote{[Online; accessed 10-May-2021].}
+
+
+\bibitem[\protect\citeauthoryear{Madhoun, Bertin, and Pujolle}{Madhoun
+  et~al\mbox{.}}{2018}]%
+        {emvandvulnerabilities}
+\bibfield{author}{\bibinfo{person}{Nour~El Madhoun}, \bibinfo{person}{Emmanuel
+  Bertin}, {and} \bibinfo{person}{Guy Pujolle}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{An Overview of the EMV Protocol and Its Security
+  Vulnerabilities}. In \bibinfo{booktitle}{\emph{2018 Fourth International
+  Conference on Mobile and Secure Services (MobiSecServ)}}.
+  \bibinfo{pages}{1--5}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/MOBISECSERV.2018.8311444}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Research}{Research}{2021}]%
+        {nfcmarket}
+\bibfield{author}{\bibinfo{person}{Allied~Market Research}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{Near Field Communication Market
+  Statistics: 2028}}}.
+\newblock
+\newblock
+\shownote{[Online; accessed 10-May-2021].}
+
+
+\bibitem[\protect\citeauthoryear{Reville}{Reville}{2020}]%
+        {contactlesscovid}
+\bibfield{author}{\bibinfo{person}{Pete Reville}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{Contactless and COVID-19}}}.
+\newblock
+\newblock
+\shownote{[Online; accessed 10-May-2021].}
+
+
+\bibitem[\protect\citeauthoryear{van~den Breekel, Ortiz-Yepes, Poll, and
+  de~Ruiter}{van~den Breekel et~al\mbox{.}}{2016}]%
+        {van2016emv}
+\bibfield{author}{\bibinfo{person}{Jordi van~den Breekel},
+  \bibinfo{person}{Diego~A Ortiz-Yepes}, \bibinfo{person}{Erik Poll}, {and}
+  \bibinfo{person}{Joeri de Ruiter}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{EMV in a nutshell}.
+\newblock In \bibinfo{booktitle}{\emph{Technical Report}}.
+  \bibinfo{pages}{1--37}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Want}{Want}{2011}]%
+        {want2011near}
+\bibfield{author}{\bibinfo{person}{Roy Want}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Near field communication}.
+\newblock \bibinfo{journal}{\emph{IEEE Pervasive Computing}}
+  \bibinfo{volume}{10}, \bibinfo{number}{3} (\bibinfo{year}{2011}),
+  \bibinfo{pages}{4--7}.
+\newblock
+
 
 \end{thebibliography}
